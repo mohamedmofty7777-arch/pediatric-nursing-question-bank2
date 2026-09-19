@@ -1,0 +1,18 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Pediatric Nursing Chapters 4-7</title><style>body{font-family:Arial;background:#f4f8ff;margin:20px}h1{color:#0b5ed7}.card{background:white;padding:15px;border-radius:10px;box-shadow:0 1px 5px #ccc}button{margin:5px;padding:8px 12px}</style></head><body><h1>🩺 Pediatric Nursing Question Bank (Chapters 4-7)</h1><p>Feeding of Infants • Neonatal Resuscitation & BLS • Incubator Care • Administration of Drugs</p><div id="quiz" class="card"></div><script>
+const qs=[
+{t:'Feeding of Infants',q:'Gavage feeding is indicated for which infant?',o:['Strong sucking reflex','Respiratory distress','Healthy toddler','School-age child'],a:1},
+{t:'Feeding of Infants',q:'Before gavage feeding the nurse should first?',o:['Give water','Aspirate stomach contents','Remove tube','Sit child up'],a:1},
+{t:'Neonatal Resuscitation',q:'The Golden Minute ends at?',o:['30 sec','60 sec','90 sec','120 sec'],a:1},
+{t:'Neonatal Resuscitation',q:'MR SOPA letter M means?',o:['Medication','Mask Adjustment','Monitor','Massage'],a:1},
+{t:'Neonatal Resuscitation',q:'Chest compression ratio in neonatal resuscitation is?',o:['15:2','30:2','3:1','5:1'],a:2},
+{t:'Incubator Care',q:'Recommended incubator humidity is?',o:['20-30%','40-50%','60-70%','80-90%'],a:2},
+{t:'Incubator Care',q:'Incubator temperature should be?',o:['22-25°C','28-30°C','32-36°C','40-42°C'],a:2},
+{t:'Drug Administration',q:'Five rights include right patient, drug, dose, route and?',o:['Weight','Temperature','Time','Allergy'],a:2},
+{t:'Drug Administration',q:'Subcutaneous injections are usually given at what angle?',o:['15°','30°','45°','90°'],a:2},
+{t:'Drug Administration',q:'Intradermal injections are commonly used for?',o:['Blood transfusion','Allergy testing','Hydration','Nutrition'],a:1}
+];
+let i=0,s=0;
+function show(){if(i>=qs.length){document.getElementById('quiz').innerHTML='<h2>Quiz Completed</h2><p>Score: '+s+'/'+qs.length+'</p>';return;}let x=qs[i];let h='<h3>'+x.t+'</h3><p>'+(i+1)+'. '+x.q+'</p>';x.o.forEach((v,n)=>h+='<button onclick="ans('+n+')">'+v+'</button><br>');document.getElementById('quiz').innerHTML=h;}
+function ans(n){if(n===qs[i].a)s++;i++;show();}
+show();
+</script></body></html>

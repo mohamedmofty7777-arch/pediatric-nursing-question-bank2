@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Pediatric Nursing Chapters 8-10</title><style>body{font-family:Arial;background:#f4f8ff;margin:20px}h1{color:#0b5ed7}.card{background:white;padding:15px;border-radius:10px;box-shadow:0 1px 5px #ccc}button{margin:5px;padding:8px 12px}</style></head><body><h1>💉🫁🔄 Pediatric Nursing Question Bank (Chapters 8-10)</h1><p>Intravenous Therapy • Oxygen Therapy • Transanal Irrigation</p><div id="quiz" class="card"></div><script>
+const qs=[
+{t:'IV Therapy',q:'For a child weighing 8 kg, maintenance fluid is?',o:['50 mL/kg/day','75 mL/kg/day','100 mL/kg/day','150 mL/kg/day'],a:2},
+{t:'IV Therapy',q:'Which is a local complication of IV therapy?',o:['Air embolism','Phlebitis','Fluid overload','Electrolyte disturbance'],a:1},
+{t:'IV Therapy',q:'Blood transfusion should be completed within?',o:['1 hour','2 hours','4 hours','8 hours'],a:2},
+{t:'IV Therapy',q:'First action if transfusion reaction is suspected?',o:['Increase rate','Stop transfusion','Remove IV','Give food'],a:1},
+{t:'Oxygen Therapy',q:'Preferred oxygen device for neonates and infants requiring maximum oxygenation?',o:['Nasal cannula','Venturi mask','Oxygen hood','Room air'],a:2},
+{t:'Oxygen Therapy',q:'Normal oxygen hood flow rate is?',o:['1-2 L/min','5-15 L/min','20-25 L/min','30 L/min'],a:1},
+{t:'Oxygen Therapy',q:'A complication of prolonged oxygen therapy is?',o:['ROP','Hypertension','Hypoglycemia','Anemia'],a:0},
+{t:'Transanal Irrigation',q:'Recommended irrigation volume is?',o:['5-10 mL/kg','10-20 mL/kg','25-30 mL/kg','40 mL/kg'],a:1},
+{t:'Transanal Irrigation',q:'Recommended water temperature is?',o:['20-22°C','25-28°C','36-38°C','45°C'],a:2},
+{t:'Transanal Irrigation',q:'After irrigation, the child should remain seated for about?',o:['5 min','10 min','20-30 min','60 min'],a:2}
+];
+let i=0,s=0;function show(){if(i>=qs.length){document.getElementById('quiz').innerHTML='<h2>Quiz Completed</h2><p>Final Score: '+s+'/'+qs.length+'</p>';return;}let x=qs[i];let h='<h3>'+x.t+'</h3><p>'+(i+1)+'. '+x.q+'</p>';x.o.forEach((v,n)=>h+='<button onclick="ans('+n+')">'+v+'</button><br>');document.getElementById('quiz').innerHTML=h;}function ans(n){if(n===qs[i].a)s++;i++;show();}show();
+</script></body></html>
